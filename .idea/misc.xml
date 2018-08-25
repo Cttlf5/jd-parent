@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/jd-manager-web" />
     <file type="web" url="file://$PROJECT_DIR$/jd-manager/jd-manager-service" />
     <file type="web" url="file://$PROJECT_DIR$/jd-manager/jd-manager-web" />
   </component>
@@ -8,11 +9,12 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/jd-manager/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/jd-manager/jd-manager-web/pom.xml" />
+        <option value="$PROJECT_DIR$/jd-manager-web/pom.xml" />
         <option value="$PROJECT_DIR$/jd-manager/pom.xml" />
       </set>
     </option>

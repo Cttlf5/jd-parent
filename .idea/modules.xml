@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/jd-manager/jd-manager-interface/jd-manager-interface.iml" filepath="$PROJECT_DIR$/jd-manager/jd-manager-interface/jd-manager-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/jd-manager/jd-manager-pojo/jd-manager-pojo.iml" filepath="$PROJECT_DIR$/jd-manager/jd-manager-pojo/jd-manager-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jd-manager/jd-manager-service/jd-manager-service.iml" filepath="$PROJECT_DIR$/jd-manager/jd-manager-service/jd-manager-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jd-manager/jd-manager-web/jd-manager-web.iml" filepath="$PROJECT_DIR$/jd-manager/jd-manager-web/jd-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-manager-web/jd-manager-web.iml" filepath="$PROJECT_DIR$/jd-manager-web/jd-manager-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/jd-parent.iml" filepath="$PROJECT_DIR$/jd-parent.iml" />
     </modules>
   </component>
