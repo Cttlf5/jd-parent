@@ -30,4 +30,9 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.jd.mapper" />
     </bean>
+    <!-- 配置mapper代理对象 -->
+    <!--<bean class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+        <!--<property name="mapperInterface" value="com.jd.mapper.ItemMapper"/>-->
+        <!--<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>-->
+    <!--</bean>-->
 </beans>

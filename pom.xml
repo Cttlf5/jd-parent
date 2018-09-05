@@ -12,7 +12,6 @@
         <module>jd-common</module>
         <module>jd-manager</module>
         <module>jd-manager-web</module>
-        <module>jd-manager-web</module>
     </modules>
 
     <!-- 集中定义依赖版本号 -->
