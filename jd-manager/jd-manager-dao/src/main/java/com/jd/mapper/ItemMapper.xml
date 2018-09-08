@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jd.mapper.ItemMapper">
+    
+    <select id="getItemList"  resultMap="itemList">
+      select * from item order by id + 0
+    </select>
+
+
+    <select id="getItemById" parameterType="string" resultMap="item">
+    <!--#{id}可以防止sql注入问题，${id}则只是拼接字符串的作用-->
+        select * from item1
+        <!--where自动去掉第一个and-->
+        <where>
+            <include refid="query_item_where"/>
+        </where>
+
+    </select>
+
+    <!--数据库字段名和类中属性名一致时可以省略
+    type是最终映射的Java类
+    -->
+    <resultMap id="itemList" type="com.jd.manager.pojo.Item">
+        <!--
+        id标签，查询结果的唯一标识列（主键或唯一标识）
+        column:sql中的字段名
+        property:java类的属性名
+        result:普通列
+        -->
+        <id column="id" property="id"/>
+        <result column="item_name" property="itemName"/>
+    </resultMap>
+    <!--数据库字段名和类中属性名一致时可以省略
+    type是最终映射的Java类
+    -->
+    <resultMap id="item" type="com.jd.manager.pojo.Item">
+        <!--
+        id标签，查询结果的唯一标识列（主键或唯一标识）
+        column:sql中的字段名
+        property:java类的属性名
+        result:普通列
+        -->
+        <id column="id" property="id"/>
+        <result column="item_name" property="itemName"/>
+    </resultMap>
+
+    <sql id="query_item_where">
+        <if test="_parameter!=null and _parameter!=''">
+            and id = ${_parameter}
+        </if>
+        <!--
+        此处ids为java传过来的List
+        最终拼接效果类似： and id in(111,222,333)
+
+        <if test="ids!=null and ids.size>0">
+            <foreach collection="ids" open="and id in(" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </if>
+        -->
+    </sql>
+
+</mapper>

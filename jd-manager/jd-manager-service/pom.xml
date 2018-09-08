@@ -38,7 +38,7 @@
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
-                    <port>80</port>
+                    <port>8081</port>
                     <path>/manager-service</path>
                 </configuration>
             </plugin>
@@ -46,12 +46,17 @@
     </build>
 
     <dependencies>
-
-        <!-- dubbo相关 -->
+        <!--mybatis分页工具-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
+        <!--单元测试工具-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+        <!-- dubbo相关 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>

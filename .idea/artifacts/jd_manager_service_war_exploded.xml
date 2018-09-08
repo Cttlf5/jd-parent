@@ -7,6 +7,8 @@
           <element id="module-output" name="jd-manager-service" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:4.1.4" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:0.9.5" />
           <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.5.3" />
           <element id="library" level="project" name="Maven: org.javassist:javassist:3.15.0-GA" />
           <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.4.7" />
